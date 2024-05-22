@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title" class="title-center">Personal data form simulator</h1>
+        <p id="description" class="description-center">Welcome to our personal data form. This form has been created to efficiently and securely collect the necessary information. Please fill in the fields with your data confidently, knowing that your privacy is our priority. Thank you for your cooperation.</p>
+        
+        <form id="survey-form">
+            <div class="form-name">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+            </div>
+            <div class="form-email">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-age">
+                <label id="number-label" for="age">Age</label>
+                <input type="number" placeholder="Age" id="age" min="10" max="100">
+            </div>
+            <div class="form-select"> 
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <select name="gender" id="dropdown" class="form-select-gender" required>
+                        <option disabled="" selected="" value="">Select an option</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="non-binary">Non-binary</option>
+                        <option value="gender fluid">Gender fluid</option>
+                        <option value="agender">Agender</option>
+                        <option value="transgender">Transgender</option>
+                        <option value="bigender">Bigender</option>
+                        <option value="androgynous">Androgynous</option>
+                        <option value="another identity not listed">Another identity not listed (Sorry, we're working on it)</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Occupation:</legend> 
+                    <label>
+                        <input name="choises" value="professional" type="radio" class="input-radio"> Professional
+                    </label>
+                    <label>
+                        <input name="choises" value="student" type="radio" class="input-radio"> Student
+                    </label>
+                    <label>
+                        <input name="choises" value="employed" type="radio" class="input-radio"> Employed
+                    </label>
+                    <label>
+                        <input name="choises" value="self-employed" type="radio" class="input-radio"> Self-employed
+                    </label>
+                    <label>
+                        <input name="choises" value="unemployed" type="radio" class="input-radio"> Unemployed 
+                    </label>
+                    <label>
+                        <input name="choises" value="prefer not to say" type="radio" class="input-radio" checked> Prefer not to say
+                    </label>
+                </fieldset>
+            </div>
+            <div class="form-comments">
+                <fieldset>
+                    <legend>Comments or relevant information you would like to contribute?</legend>
+                    <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+                </fieldset>
+            </div>
+            <div class="form-submit">
+                <button type="submit" id="submit" class="button-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>This is the footer of the form simulator.</p>
+    </footer>
+</body>
+
+</html>
