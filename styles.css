@@ -1,5 +1,9 @@
 /* Estilos generales */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Nunito, sans-serif, Arial, Helvetica;
     font-weight: 800;
